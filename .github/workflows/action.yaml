@@ -17,8 +17,8 @@ jobs:
       contents: write
 
     steps:
-    - name: pwd
-      run: pwd
+    - name: ls
+      run: ls
 
     - name: jq
       run: jq -r '.name' da.json
