@@ -1,0 +1,22 @@
+name: Release preaparation
+on:
+  push:
+    branches:
+    - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  build-and-pack:
+    name: Build and pack
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: jq
+      run: jq
+
