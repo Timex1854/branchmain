@@ -17,6 +17,8 @@ jobs:
       contents: write
 
     steps:
+    - name: echo
+      run: echo '{"catalin:da"}' > da.json
     - name: jq
-      run: jq
+      run: jq -r '.catalin' da.json
 
