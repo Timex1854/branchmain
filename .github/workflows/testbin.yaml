@@ -20,5 +20,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: linux
         goarch: amd64
-        project_path: "cmd/kndp"
+        project_path: "./cmd/kndp"
         binary_name: "kndp"
